@@ -109,9 +109,100 @@ arr = np.array([10,20,30,40,50,60,70,80,90,100])
 # x =  np.nan_to_num(arr,nan=12)
 # print(x)
 
-arr = np.array([1,2,3,np.inf,np.inf,6,7,-np.inf])
-x = np.isinf(arr)
-print(x)
+# arr = np.array([1,2,3,np.inf,np.inf,6,7,-np.inf])
+# x = np.isinf(arr)
+# print(x)
 
-y = np.nan_to_num(arr,posinf=43,neginf=10)
-print(y)
+# y = np.nan_to_num(arr,posinf=43,neginf=10)
+# print(y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # Create a 3D array (3 pages, 4 rows, 5 columns)
+# arr_3d = np.array([
+#     # Page 0
+#     [[1,  2,  3,  4,  5],
+#      [6,  7,  8,  9,  10],
+#      [11, 12, 13, 14, 15],
+#      [16, 17, 18, 19, 20]],
+    
+#     # Page 1
+#     [[21, 22, 23, 24, 25],
+#      [26, 27, 28, 29, 30],
+#      [31, 32, 33, 34, 35],
+#      [36, 37, 38, 39, 40]],
+    
+#     # Page 2
+#     [[41, 42, 43, 44, 45],
+#      [46, 47, 48, 49, 50],
+#      [51, 52, 53, 54, 55],
+#      [56, 57, 58, 59, 60]]
+# ])
+
+# print("Shape:", arr_3d.shape)  
+
+
+# # 1. Access a single element
+# element = arr_3d[1, 2, 3]  # Page 1, Row 2, Column 3
+# print("Single element:", element)  # 34
+
+# # 2. Access an entire page (2D array)
+# page_0 = arr_3d[]  # All of page 0
+# print("\nPage 0:\n", page_0)
+
+# # 3. Access a specific row from a specific page
+# row = arr_3d[1, 2]  # Page 1, Row 2
+# print("\nPage 1, Row 2:", row)  # [31, 32, 33, 34, 35]
+
+# # 4. Access a specific column from all pages
+# column = arr_3d[:,0,3]  # All pages, all rows, column 2
+# print("\nColumn 2 from all pages:\n", column)
+
+# # 5. Access using slicing
+# slice_result = arr_3d[0:2, 1:3, 2:4]  # Pages 0-1, Rows 1-2, Columns 2-3
+# print("\nSliced array:\n", slice_result)
+
+# # 6. Negative indexing works too
+# last_element = arr_3d[-1, -1,-1]  # Last page, last row, last column
+# print("\nLast element:", last_element)  # 60
+
+
+
+
+
+
+
+
+# # Create a 4D array: (2, 2, 3, 4)
+# # 2 bookshelves, 2 books each, 3 pages each, 4 lines each
+# arr_4d = np.array([[[[1, 2, 3, 4],[5, 6, 7, 8],[9, 10, 11, 12]],[[13, 14, 15, 16],[17, 18, 19, 20],[21, 22, 23, 24]]],
+# [[[25, 26, 27, 28],[29, 30, 31, 32],[33, 34, 35, 36]],[[37, 38, 39, 40],[41, 42, 43, 44],[45, 46, 47, 48]]]])
+
+# # print("Shape:", arr_4d.shape)  # (2, 2, 3, 4)
+# # print("This means: 2 bookshelves, 2 books, 3 pages, 4 lines\n")
+
+# # bookshelf = arr_4d[0]
+# # print(bookshelf)
+
+# arr = arr_4d[1,1,2,3]
+
+# print('the output is:',arr)
