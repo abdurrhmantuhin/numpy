@@ -12,7 +12,7 @@ import numpy as np
 
 # math
 
-arr = np.array([10,20,30,40,50,60,70,80,90,100])
+# arr = np.array([10,20,30,40,50,60,70,80,90,100])
 # print(arr+5)
 
 # print(np.sum(arr))
@@ -23,14 +23,14 @@ arr = np.array([10,20,30,40,50,60,70,80,90,100])
 # print(np.var(arr))
 
 
-# x = np.arange(0,201,5) #start, stop , step 
-# print(x)
+x = np.arange(0,100,5) #start, stop , step 
+print(x)
 
-# arr2 = np.linspace(0,100,5)
-# print(arr2)
+arr2 = np.linspace(0,100,5)
+print(arr2)
 
-# arr3 = np.logspace(2,3,5)
-# print(arr3)
+arr3 = np.logspace(2,3,5)
+print(arr3)
 
 # print(arr[3:])
 # print(arr[4:6])

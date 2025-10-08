@@ -1,0 +1,4 @@
+-- problems
+
+np.random.seed(42)
+axis=(1,2,3)
