@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 
 # arr = np.array([[1.9192,2.8921,3.921,4.911],
 #                 [5.82,6.872,7.82,8.02]])
@@ -23,14 +23,14 @@ import numpy as np
 # print(np.var(arr))
 
 
-x = np.arange(0,100,5) #start, stop , step 
-print(x)
+# x = np.arange(0,201,5) #start, stop , step 
+# print(x)
 
-arr2 = np.linspace(0,100,5)
-print(arr2)
+# arr2 = np.linspace(0,100,5)
+# print(arr2)
 
-arr3 = np.logspace(2,3,5)
-print(arr3)
+# arr3 = np.logspace(2,3,5)
+# print(arr3)
 
 # print(arr[3:])
 # print(arr[4:6])
