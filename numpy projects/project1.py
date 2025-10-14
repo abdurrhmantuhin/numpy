@@ -76,3 +76,27 @@ for i in range(0,100,patch_size):
 patches_array = np.array(patches)
 print(f"extracted {len(patches)} patches of size {patch_size}x{patch_size}")
 
+mean_intensities = np.mean(patches_array, axis=(1,2))
+print(F"Average intensity across all patches: {np.round(np.mean(mean_intensities),2)}")
+
+threshold = 128
+binary_image = np.where(image>threshold,255,0)
+print(f"Percentage of bright pixels: {np.sum(binary_image == 255) / binary_image.size * 100:.2f}%")
+
+bordered_image = np.pad(image, pad_width=5,mode="constant",constant_values=255)
+print(F"original shape: {image.shape}, bordered shape: {bordered_image.shape}")
+
+
+print("\n\n[PART 4] Matrix Operations & Linear Algebra")
+print("-" * 60)
+
+data_points = np.random.randn(10,2)
+correlation_matrix = np.corrcoef(data_points.T)
+print(F"correlation matrix:\n{np.round(data_points,3)}")
+
+A = np.array([[3,1],[1,2]])
+B = np.array([15,10])
+X = np.linalg.solve(A,B)
+print(F"\nsolving 3x + y = 9 and x +2y = 8:")
+print(F"solution: x = {X[0]}, y = {X[1]}")
+print(X)
