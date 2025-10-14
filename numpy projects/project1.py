@@ -95,8 +95,18 @@ correlation_matrix = np.corrcoef(data_points.T)
 print(F"correlation matrix:\n{np.round(data_points,3)}")
 
 A = np.array([[3,1],[1,2]])
-B = np.array([15,10])
+B = np.array([9,8])
 X = np.linalg.solve(A,B)
 print(F"\nsolving 3x + y = 9 and x +2y = 8:")
 print(F"solution: x = {X[0]}, y = {X[1]}")
-print(X)
+
+matrix = np.array([[4,-2],[1,1]])
+eigenvalues, eigenvectors = np.linalg.eig(matrix)
+
+print(f"\nEigenvalues: {eigenvalues}")
+print(f"Eigenvectors:\n {eigenvectors}")
+
+x = np.random.randn(50,3)
+weights = np.array([0.5,-0.3,0.8])
+predictions = x @ weights
+print(F"\npredictions shape: {predictions}")
