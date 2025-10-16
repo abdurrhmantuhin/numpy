@@ -1,4 +1,41 @@
 -- problems
 
-np.random.seed(42)
-axis=(1,2,3)
+General
+np.random.seed()
+np.random.randint()
+np.random.randn()
+np.array()
+np.zeros_like()
+np.abs()
+np.power()
+np.sqrt()
+np.round()
+np.set_printoptions()
+
+Array Operations
+np.sum()
+np.argmax()
+np.diff()
+np.where()
+np.pad()
+
+Statistics
+np.min()
+np.max()
+np.mean()
+np.std()
+np.percentile()
+np.corrcoef()
+
+Linear Algebra
+np.linalg
+np.linalg.solve()
+np.linalg.eig()
+
+Time Series / Convolution
+np.convolve()
+
+Time Module Functions
+time.time()
+
+4d assecc

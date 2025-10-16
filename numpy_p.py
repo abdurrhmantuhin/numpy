@@ -200,24 +200,3 @@ time_loop = time.time() - start
 print(f"Vectorized time: {time_vectorized:.4f} seconds")
 print(f"Loop time: {time_loop:.4f} seconds")
 print(f"Speedup: {time_loop / time_vectorized:.1f}x faster with vectorization!")
-
-
-# ============================================
-# BONUS CHALLENGES (Try These!)
-# ============================================
-print("\n\n[BONUS] Additional Challenges to Try:")
-print("-" * 60)
-print("""
-1. Image Convolution: Implement a 3x3 blur filter on a 2D array
-2. K-Means Clustering: Implement basic k-means using only NumPy
-3. Monte Carlo Simulation: Estimate π using random points
-4. Polynomial Fitting: Fit a polynomial curve to noisy data
-5. Distance Matrix: Calculate pairwise Euclidean distances
-6. Histogram Equalization: Implement for image enhancement
-7. Fourier Transform: Analyze frequency components of signals
-8. PCA: Implement dimensionality reduction from scratch
-""")
-
-print("\n" + "=" * 60)
-print("PROJECT COMPLETE! Master these concepts and you'll be a NumPy expert!")
-print("=" * 60)
