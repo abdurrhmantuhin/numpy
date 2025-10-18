@@ -1,25 +1,36 @@
-import numpy as np 
+import numpy as np
 
-result = np.array([
- [30, 65, 42, 64, 46, 31, 81, 55, 53, 51],
- [56, 75, 74, 86, 33, 65, 80, 36, 78, 50],
- [52, 71, 81, 58, 54, 41, 58, 82, 85, 84],
- [47, 83, 88, 64, 47, 58, 83, 49, 43, 88],
- [61, 64, 88, 34, 89, 31, 42, 42, 80, 65],
- [34, 35, 50, 35, 69, 74, 52, 64, 76, 75],
- [66, 73, 60, 61, 51, 61, 77, 38, 82, 40],
- [68, 88, 31, 50, 44, 39, 39, 44, 51, 43],
- [45, 80, 34, 66, 59, 61, 66, 49, 78, 41],
- [75, 37, 56, 59, 83, 77, 80, 76, 60, 35],
- [70, 40, 83, 43, 72, 48, 78, 45, 47, 69],
- [64, 80, 38, 80, 51, 64, 86, 54, 80, 47],
- [43, 30, 66, 63, 51, 79, 31, 88, 77, 64],
- [37, 55, 87, 40, 87, 46, 47, 39, 36, 37],
- [33, 65, 88, 80, 63, 57, 45, 30, 47, 31],
- [75, 72, 38, 85, 48, 88, 58, 37, 82, 62],
- [74, 47, 51, 82, 84, 43, 73, 41, 30, 59],
- [44, 56, 49, 54, 49, 80, 65, 63, 56, 44],
- [78, 72, 32, 61, 69, 31, 63, 47, 50, 50],
- [58, 88, 86, 62, 70, 62, 67, 64, 61, 34],
-])
+# np.random.seed(1)
+# result = np.random.randint(30,99,(20,10))
 
+# student_avg = np.mean(result,axis=1)
+# fails = np.any(result < 33, axis=1)
+# a_plus_students = np.sum(np.sum(result >= 80, axis=1) >= 4)
+# pass_student = np.sum(~fails)
+
+
+# print("Student Result Dashboard")
+# print("-" * 30)
+# for x in range(20):
+#     print(f"Student {x}: {student_avg[x]} marks")
+# print(f"total pass student: {pass_student}")
+# print(f"total failed student: {np.sum(fails)}")
+# print(f"A+ student (students with at least 4 subjects >= 80 marks): {a_plus_students}")
+
+
+# np.random.seed(2)
+# temperature = np.random.randint(25, 40, (4, 7))
+
+# avg_temp = np.mean(temperature, axis=1)
+# highest = np.max(temperature, axis=1)
+# lowest = np.min(temperature, axis=1)
+# hot_day = np.where(temperature >= 38)
+
+# print("\n TEMPERATURE DASHBOARD")
+# print("-" * 40)
+# print(f"weekly average: {np.round(avg_temp,2)}")
+# print(f"weekly max: {highest}")
+# print(f"weekly min: {lowest}")
+# print(f"Day's ≥38°C: {len(hot_day[0])}")
+# for week, day in zip (hot_day[0],hot_day[1]):
+#     print(f"week {week+1} Day {day+1} = {temperature[week,day]}°C ")
